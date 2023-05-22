@@ -37,36 +37,38 @@ export function Login() {
 
   return (
     <div >
-     <div className="login-form-container">
-      <form className="login-form" onSubmit={handleSubmit}>
-        <h1 className="h3 mb-3 fw-normal">Sign In</h1>
-        <div className="form-floating mb-3">
-          <input
-            type="email"
-            name="email"
-            className="form-control form-input"
-            id="email"
-            placeholder="youremail@company.com"
-            onChange={handleChange}
-          />
-          <label htmlFor="email">Email</label>
-        </div>
-        <div className="form-floating mb-3">
-          <input
-            type="password"
-            name="password"
-            className="form-control form-input"
-            id="password"
-            placeholder="Password"
-            onChange={handleChange}
-          />
-          <label htmlFor="password">Password</label>
-        </div>
-        <button className="btn btn-primary" type="submit">
-          Login
-        </button>
-      </form>
+     <div class="login-form-container">
+  <form class="login-form" onSubmit={handleSubmit}>
+    <h1 class="h3 mb-3 fw-normal">Sign In</h1>
+    <div class="form-floating mb-3">
+      <input
+        type="email"
+        name="email"
+        class="form-control form-input"
+        id="email"
+        placeholder="youremail@company.com"
+        onChange={handleChange}
+      />
+      <label for="email">Email</label>
     </div>
+    <div class="form-floating mb-3">
+      <input
+        type="password"
+        name="password"
+        class="form-control form-input"
+        id="password"
+        placeholder="Password"
+        onChange={handleChange}
+      />
+      <label for="password">Password</label>
+    </div>
+    <div class="text-center"> 
+      <button class="btn btn-primary" type="submit">
+        Login
+      </button>
+    </div>
+  </form>
+</div>
       {/* Fin Formulario de Registro */}
     </div>
   );
